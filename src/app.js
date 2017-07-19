@@ -1,7 +1,8 @@
 import CONFIG from './config.json'
-import Content from './content'
-import Styles from './app.sass'
+import Content from './content/content'
+// import Styles from './app.sass'
 import isMobileDevice from './functions/isMobileDevice'
+import template from './template'
 
 let STATE = null
 
@@ -26,6 +27,11 @@ storeDataInState() // immediately set state base values
 // here we store the selector for the main app container
 const APP = document.querySelector(`#${CONFIG.projectName}`)
 
+const render = () => Content.cards
+	.map(card => template(card))
+	.join('')
+
 APP.setAttribute('data-mobile', STATE.mobile)
+APP.innerHTML = render()
 
 console.log({ STATE })

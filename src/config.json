@@ -1,8 +1,34 @@
 {
-	"projectName": "smallImageGrid",
+	"projectName": "compare_images",
 	"section": "network",
 	"path": {
-		"UAT": "localhost:8080",
-		"PROD": "http://media.news.com.au/nnd/t3interactives"
+		"DEV": "localhost:8080/",
+		"UAT": ".",
+		"UAT_article": "",
+		"PROD": "http://media.news.com.au/nnd/T3interactives/"
+	},
+	"localstyle": false,
+	"autoscroll": {
+		"active": false,
+		"speed": 30
+	},
+
+	"images": {
+		"jsPrefix": "Img",
+		"sizes": {
+			"thumb": 50,
+			"min": 200,
+			"max": 600,
+			"inc": 200
+		},
+		"quality": {
+			"image": 40,
+			"thumb": 80
+		},
+		"thumbBlurLarge": 2,
+		"thumbBlurSmall": 1,
+		"location": "./src/content/images",
+		"locations": []
 	}
+
 }

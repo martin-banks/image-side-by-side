@@ -1,14 +1,11 @@
-
+import card_0 from './cards/card_0'
 
 const Content = {
 	title: '',
 	intro: '',
 
-	parts: [
-		{
-			title: 'Title',
-			image: '',
-		},
+	cards: [
+		card_0,
 	],
 }
 
