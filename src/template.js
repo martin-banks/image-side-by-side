@@ -4,7 +4,7 @@ import Styles from './template.sass'
 const standardImage = 'Img400'
 
 function template(content) {
-	const { left, right, title, intro } = content
+	const { leftimage, leftcaption, leftcredit, rightimage, rightcaption, rightcredit, title, intro } = content
 
 	return `<section class="${Styles.section}">
 		<div class="${Styles.header}">
@@ -15,22 +15,22 @@ function template(content) {
 		<div class="${Styles.wrapper}">
 			<div class="${Styles.left}">
 				<img class="${Styles.image}" 
-					src="${left.image.src[standardImage]}" 
-					${createSrcSet(left.image.src)} 
-					alt="${left.image.alt}" 
+					src="${leftimage[standardImage]}" 
+					srcset="${createSrcSet(leftimage)}"
+					alt="${leftcaption} / ${leftcredit}" 
 				/>
-				<p class="${Styles.image__caption}">${left.image.alt}</p>
-				<p class="${Styles.image__credit}">${left.credit}</p>
+				<p class="${Styles.image__caption}">${leftcaption}</p>
+				<p class="${Styles.image__credit}">${leftcredit}</p>
 			</div><!--
 
 			--><div class="${Styles.right}">
 				<img class="${Styles.image}" 
-					src="${right.image.src[standardImage]}" 
-					${createSrcSet(right.image.src)} 
-					alt="${right.image.alt}" 
+					src="${rightimage[standardImage]}" 
+					srcset="${createSrcSet(rightimage)}"
+					alt="${rightcaption} / ${rightcredit}" 
 				/>
-				<p class="${Styles.image__caption}">${right.image.alt}</p>
-				<p class="${Styles.image__credit}">${right.credit}</p>
+				<p class="${Styles.image__caption}">${rightcaption}</p>
+				<p class="${Styles.image__credit}">${rightcredit}</p>
 			</div>
 		</div>
 
