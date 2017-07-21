@@ -3,9 +3,10 @@ import Content from './content/content'
 // import Styles from './app.sass'
 import isMobileDevice from './functions/isMobileDevice'
 import template from './template'
+import header from './headerTemplate'
 
 let STATE = null
-
+const { title, intro, cards } = Content
 // We use a function to set various values into state
 // this allows us to re-write it all if needed
 // for example when resizing the window
@@ -27,11 +28,15 @@ storeDataInState() // immediately set state base values
 // here we store the selector for the main app container
 const APP = document.querySelector(`#${CONFIG.projectName}`)
 
-const render = () => Content.cards
-	.map(card => template(card))
+const imageGrid = () => cards
+	.map(card => template(card).render())
 	.join('')
+const headerBlock = () => header({ title, intro })
 
 APP.setAttribute('data-mobile', STATE.mobile)
-APP.innerHTML = render()
+APP.innerHTML = [
+	headerBlock().render(),
+	imageGrid(),
+].join('')
 
 console.log({ STATE })
