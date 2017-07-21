@@ -2,6 +2,7 @@ BUILD
 .env
 .keys
 yarn.lock
+images
 
 # Created by https://www.gitignore.io/api/vim,sublimetext,node,osx,windows,linux,visualstudio,visualstudiocode
 
