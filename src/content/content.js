@@ -12,8 +12,8 @@ import * as shorts_then from './images/motherhood/shorts_then'
 import * as shorts_now from './images/motherhood/shorts_now'
 
 const Content = {
-	title: '',
-	intro: '',
+	title: 'Then and Now',
+	intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odio id voluptatibus',
 
 	// cards: [
 	// 	card1,

@@ -3,8 +3,8 @@
 	"section": "network",
 	"path": {
 		"DEV": "localhost:8080/",
-		"UAT": ".",
-		"UAT_article": "",
+		"UAT_local": ".",
+		"UAT": "http://10.68.72.154:7777/diana/01_motherhood/comparison",
 		"PROD": "http://media.news.com.au/nnd/T3interactives/"
 	},
 	"localstyle": false,
