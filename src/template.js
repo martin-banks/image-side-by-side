@@ -3,26 +3,24 @@ import Styles from './template.sass'
 
 const standardImage = 'Img400'
 
-const captionTemplate = value => `<p class="${Styles.image__caption}">${value}</p>`
-const creditTemplate = value => `<p class="${Styles.image__credit}">${value}</p>`
-
+const titleTemplate = value => `<h2 class="${Styles.header__title}">${value}</h2>`
+const introTemplate = value => `<p class="${Styles.header__intro}">${value}</p>`
 const imageTemplate = ({ img, caption, credit }) => `<img 
 	class="${Styles.image}" 
 	src="${img[standardImage]}" 
 	srcset="${createSrcSet(img)}"
 	alt="${caption} / ${credit}" 
 />`
+const captionTemplate = value => `<p class="${Styles.image__caption}">${value}</p>`
+const creditTemplate = value => `<p class="${Styles.image__credit}">${value}</p>`
 
-const titleTemplate = value => `<h2 class="${Styles.header__title}">${value}</h2>`
-const introTemplate = value => `<p class="${Styles.header__intro}">${value}</p>`
+function template(cards) {
+	const { leftimage, leftcaption, leftcredit, rightimage, rightcaption, rightcredit, title, intro } = cards
 
-function template(content) {
-	const { leftimage, leftcaption, leftcredit, rightimage, rightcaption, rightcredit, title, intro } = content
-
-	return `<section class="${Styles.section}">
+	const render = () => `<section class="${Styles.section}">
 		<div class="${Styles.header}">
 			${title ? titleTemplate(title) : ''}
-			${intro ? titleTemplate(intro) : ''}
+			${intro ? introTemplate(intro) : ''}
 		</div>
 
 		<div class="${Styles.wrapper}">
@@ -40,6 +38,8 @@ function template(content) {
 		</div>
 
 	</section>`
+
+	return { render }
 }
 
 export default template
