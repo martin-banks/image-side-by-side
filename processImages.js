@@ -18,7 +18,9 @@ const GETSIZE = require('image-size')
 // here it is imported and value destructured
 const CFG = require('./src/config.json').images
 
-const { sizes, thumbBlurLarge, thumbBlurSmall, location: imageLocation } = CFG
+const { sizes, thumbBlurLarge, thumbBlurSmall, location: imageLocation, children } = CFG
+console.log({ children })
+
 const { min, max, inc } = sizes
 const thumbSize = CFG.sizes.thumb
 // const thumbBlurLarge = CFG.thumbBlurLarge
@@ -27,13 +29,11 @@ const quality = CFG.quality.image
 const thumbQuality = CFG.quality.thumb
 // const count = (max - min) / inc
 
-// define the image location from config to be used for all processes
-const images = PATH.join(__dirname, `${imageLocation}`)
-console.log(C.cyan(images))
 
 // in order fro the images to be used with js modules, create a js 'manifest' exporting
 // each image from that location so they can be programtically accessed by templates
 const manifestTemplate = (name, size, file) => `export { default as ${CFG.jsPrefix || 'Img'}${name} } from './processed/${size}/${file}'`
+
 
 //  Helper function to log styled output
 function logResult(err, res) {
@@ -46,20 +46,20 @@ function logResult(err, res) {
 
 
 // First create the folder structure if it does not already exist
-function createFolderStructure(size, createThumbs) {
+function createFolderStructure(size, createThumbs, pathToImages) {
 	if (createThumbs) {
 		// MKDIRP(`${images}/_done`, err => console.log(err || 'dir created'))
-		MKDIRP(`${images}/processed/thumb`, err => console.log(err || 'thumb dir created'))
-		MKDIRP(`${images}/processed/thumbBlurSmall`, err => console.log(err || 'thumbBlurSmall dir created'))
-		MKDIRP(`${images}/processed/thumbBlurLarge`, err => console.log(err || 'thumbBlurLarge dir created'))
-		MKDIRP(`${images}/_RAW/_DONE`, err => console.log(err || '_DONE dir created'))
+		MKDIRP(`${pathToImages}/processed/thumb`, err => console.log(err ? `ERROR creating dir thumb --- ${err}` : 'thumb dir created'))
+		MKDIRP(`${pathToImages}/processed/thumbBlurSmall`, err => console.log(err ? `ERROR creating dir thumbBlurSmall --- ${err}` : 'thumbBlurSmall dir created'))
+		MKDIRP(`${pathToImages}/processed/thumbBlurLarge`, err => console.log(err ? `ERROR creating dir thumbBlurImage --- ${err}` : 'thumbBlurLarge dir created'))
+		MKDIRP(`${pathToImages}/_RAW/_DONE`, err => console.log(err ? `ERROR creating dir _DONE --- ${err}` : '_DONE dir created'))
 	}
 
-	MKDIRP(`${images}/processed/${size}`, err => {
-		console.log(err || `${size} dir created`)
+	MKDIRP(`${pathToImages}/processed/${size}`, err => {
+		console.log(err ? `Error creating directory - ${size} \n ${err}` : `${size} dir created`)
 		const newSize = size + inc
 		if (size <= max) {
-			createFolderStructure(newSize, false)
+			createFolderStructure(newSize, false, pathToImages)
 		} else {
 			createAllImages()
 		}
@@ -69,7 +69,17 @@ function createFolderStructure(size, createThumbs) {
 // Once directories are in place we will process our images
 function createAllImages() {
 	// first get a list of all images in the folder
-	FS.readdir(PATH.join(images, '_RAW'), (readDirError, files) => {
+
+/*
+IF CHILDREN
+	Loop over child folders
+		process images
+ELSE
+	process images
+*/
+	const pathToImages = imageLocation
+
+	FS.readdir(PATH.join(pathToImages, '_RAW'), (readDirError, files) => {
 		console.log(readDirError || files)
 		if (readDirError) return
 		// console.log(C.cyan(files.join('\t\n')))
@@ -91,28 +101,28 @@ function createAllImages() {
 
 				// as each unique version is created, it calls the process for the next ...
 				IM.convert([
-					`${images}/_RAW/${file}`,
+					`${pathToImages}/_RAW/${file}`,
 					'-resize', thumbSize,
 					'-quality', thumbQuality,
-					`${images}/processed/thumb/${file}`,
+					`${pathToImages}/processed/thumb/${file}`,
 				],
 					err => {
 						logResult(err, `${file} processed to thumb`)
 						IM.convert([
-							`${images}/_RAW/${file}`,
+							`${pathToImages}/_RAW/${file}`,
 							'-resize', thumbSize,
 							'-quality', thumbQuality,
 							'-gaussian-blur', `0x${thumbBlurSmall}`,
-							`${images}/processed/thumbBlurSmall/${file}`,
+							`${pathToImages}/processed/thumbBlurSmall/${file}`,
 						],
 							err => {
 								logResult(err, `${file} processed to thumbBlueSmall`)
 								IM.convert([
-									`${images}/_RAW/${file}`,
+									`${pathToImages}/_RAW/${file}`,
 									'-resize', thumbSize,
 									'-quality', thumbQuality,
 									'-gaussian-blur', `0x${thumbBlurLarge}`,
-									`${images}/processed/thumbBlurLarge/${file}`,
+									`${pathToImages}/processed/thumbBlurLarge/${file}`,
 								],
 									err => {
 										// ... until it has processed the last,
@@ -131,12 +141,12 @@ function createAllImages() {
 // Process the image file into it's incremental versions
 function createImageIncrement(size, file, manifest) {
 	const imagePath = `${images}/_RAW/${file}`
-	console.log({size, sizes})
+	console.log({ size, sizes })
 	if (size === sizes.min) {
 		const fileDimensions = GETSIZE(imagePath)
 		console.log({ fileDimensions })
 		const { width, height } = fileDimensions
-		const ratio = height / width
+		const ratio = width / height
 		const orientation = width > height ? 'landscape' : 'portrait'
 		manifest.push(`export const ImgData = { width: ${width}, height: ${height}, ratio: ${ratio}, orientation: '${orientation}' }`)
 	}
@@ -184,6 +194,18 @@ function createImageIncrement(size, file, manifest) {
 }
 
 
+// define the image location from config to be used for all processes
+const images = PATH.join(__dirname, `${imageLocation}`)
+
+console.log(C.cyan(images))
+
+
 // Kick off the processing app!
-createFolderStructure(min, true)
+if (children) {
+	// loop over child folders
+	CFG.locations.forEach(loc => createFolderStructure(min, true, PATH.join(__dirname, loc)))
+} else {
+	// process iamges in single folcer
+	createFolderStructure(min, true, PATH.join(__dirname, CFG.location))
+}
 

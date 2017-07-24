@@ -1,10 +1,10 @@
 {
-	"projectName": "compare_images_friends",
+	"projectName": "compare_images_philanthropy",
 	"section": "network",
 	"path": {
 		"DEV": "localhost:8080/",
 		"UAT_local": ".",
-		"UAT": "http://10.68.72.154:7777/diana/03_friends/comparison",
+		"UAT": "http://10.68.72.154:7777/diana/05_philanthropy/comparison",
 		"PROD": "http://media.news.com.au/nnd/T3interactives/"
 	},
 	"localstyle": false,
@@ -14,6 +14,7 @@
 	},
 
 	"images": {
+		"children": false,
 		"jsPrefix": "Img",
 		"sizes": {
 			"thumb": 50,
@@ -27,8 +28,16 @@
 		},
 		"thumbBlurLarge": 2,
 		"thumbBlurSmall": 1,
-		"location": "./src/content/images/friends",
-		"locations": []
+		"location": "./src/content/images/philanthropy",
+		"locations": [
+			"./src/content/images/motherhood",
+			"./src/content/images/friends",
+			"./src/content/images/princess",
+			"./src/content/images/philanthropy",
+			"./src/content/images/style_icon",
+			"./src/content/images/the_firm",
+			"./src/content/images/weddings"
+		]
 	}
 
 }

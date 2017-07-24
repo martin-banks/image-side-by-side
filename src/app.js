@@ -2,7 +2,12 @@ import CONFIG from './config.json'
 
 // import Content from './content/motherhood'
 // import Content from './content/princess'
-import Content from './content/friends'
+// import Content from './content/friends'
+// import Content from './content/style_icon'
+import Content from './content/philanthropy'
+// import Content from './content/the_firm'
+// import Content from './content/weddings'
+
 
 // import Styles from './app.sass'
 import isMobileDevice from './functions/isMobileDevice'
