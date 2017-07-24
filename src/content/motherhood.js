@@ -13,7 +13,7 @@ import * as shorts_now from './images/motherhood/shorts_now'
 
 const Content = {
 	title: 'Then and Now',
-	intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odio id voluptatibus',
+	intro: 'There are deliberate echoes of Diana as William and Catherine combine Royal duties and family life',
 
 	// cards: [
 	// 	card1,

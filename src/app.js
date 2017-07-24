@@ -1,5 +1,9 @@
 import CONFIG from './config.json'
-import Content from './content/content'
+
+// import Content from './content/motherhood'
+// import Content from './content/princess'
+import Content from './content/friends'
+
 // import Styles from './app.sass'
 import isMobileDevice from './functions/isMobileDevice'
 import template from './template'

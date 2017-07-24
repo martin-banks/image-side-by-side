@@ -1,10 +1,10 @@
 {
-	"projectName": "compare_images",
+	"projectName": "compare_images_friends",
 	"section": "network",
 	"path": {
 		"DEV": "localhost:8080/",
 		"UAT_local": ".",
-		"UAT": "http://10.68.72.154:7777/diana/01_motherhood/comparison",
+		"UAT": "http://10.68.72.154:7777/diana/03_friends/comparison",
 		"PROD": "http://media.news.com.au/nnd/T3interactives/"
 	},
 	"localstyle": false,
@@ -27,7 +27,7 @@
 		},
 		"thumbBlurLarge": 2,
 		"thumbBlurSmall": 1,
-		"location": "./src/content/images/motherhood",
+		"location": "./src/content/images/friends",
 		"locations": []
 	}
 
