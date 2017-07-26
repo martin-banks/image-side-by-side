@@ -21,7 +21,7 @@ const Content = {
 	cards: [
     {
         "leftimage": balcony_then,
-        "leftcaption": "A young Harry gets cheeky on the Buckingham Palace balcony in 1988,",
+        "leftcaption": "Harry gets cheeky on the Buckingham Palace balcony in 1988.",
         "leftcredit": "Getty",
         "rightimage": balcony_now,
         "rightcaption": "George salutes during last year’s Trooping the Colour.",
@@ -29,24 +29,26 @@ const Content = {
     },
     {
         "leftimage": rock_then,
-        "leftcaption": "Diana and Charles tour Uluru in 1983",
+        "leftcaption": "Diana and Charles climbed Uluru when they visited Australia in 1983.",
         "leftcredit": "Getty",
         "rightimage": rock_now,
-        "rightcaption": "Kate and William visited in 2014, but unlike his parents did not climb the rock",
+        "rightcaption": "Kate and William took a guided tour around the rockon their visit in 2014.",
         "rightcredit": "Gregg Porteous"
     },
     {
         "leftimage": run_then,
-        "leftcaption": "Diana shows her competitive streak as she races to the line at her sons’ school sports day,",
+        "leftcaption": "Diana shows her competitive streak as she races to the line at her sons’ school sports day.",
         "rightimage": run_now,
-        "rightcaption": "Catherine joins in a kids’ sports event in India. Picture: Splash News",
+        "rightcaption": "Catherine enthusiastically joins in a kids’ sports event in India. ",
         "rightcredit": "Splash news"
     },
     {
         "leftimage": shorts_then,
-        "leftcaption": "Prince George, right, attends the christening of his sister Charlotte in an outfit nearly identical to the one worn by William when he visited his newborn brother Harry in hospital in 1984",
+        "leftcaption": "William visits his newborn brother Harry in hospital in 1984.",
+        "leftcredit": "Getty",
         "rightimage": shorts_now,
-        "rightcredit": "getty"
+        "rightcaption": "Prince George is dressed almost identically for sister Charlotte's christening in 2015.",
+        "rightcredit": "Getty"
     }
 ]
 }

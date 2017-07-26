@@ -1,10 +1,10 @@
 {
-	"projectName": "compare_images_philanthropy",
+	"projectName": "compare_images_motherhood",
 	"section": "network",
 	"path": {
 		"DEV": "localhost:8080/",
 		"UAT_local": ".",
-		"UAT": "http://10.68.72.154:7777/diana/05_philanthropy/comparison",
+		"UAT": "http://10.68.72.154:7777/diana/01_motherhood/comparison",
 		"PROD": "http://media.news.com.au/nnd/T3interactives/"
 	},
 	"localstyle": false,
