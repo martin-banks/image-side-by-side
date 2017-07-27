@@ -32,7 +32,7 @@ const Content = {
         "leftcaption": "Diana and Charles climbed Uluru when they visited Australia in 1983.",
         "leftcredit": "Getty",
         "rightimage": rock_now,
-        "rightcaption": "Kate and William took a guided tour around the rockon their visit in 2014.",
+        "rightcaption": "Kate and William took a guided tour around the rock on their visit in 2014.",
         "rightcredit": "Gregg Porteous"
     },
     {

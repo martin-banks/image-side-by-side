@@ -13,6 +13,7 @@ import Content from './content/motherhood'
 import isMobileDevice from './functions/isMobileDevice'
 import template from './template'
 import header from './headerTemplate'
+import Styles from './template.sass'
 
 let STATE = null
 const { title, intro, cards } = Content
@@ -43,9 +44,9 @@ const imageGrid = () => cards
 const headerBlock = () => header({ title, intro })
 
 APP.setAttribute('data-mobile', STATE.mobile)
-APP.innerHTML = [
+APP.innerHTML = `<div class="${Styles.container}">${[
 	headerBlock().render(),
 	imageGrid(),
-].join('')
+].join('')}</div>`
 
 console.log({ STATE })
