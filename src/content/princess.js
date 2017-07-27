@@ -15,7 +15,7 @@ import * as planeCatherine from './images/princess/planeCatherine'
 
 const Content = {
 	title: 'Then and Now',
-	intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odio id voluptatibus',
+	intro: 'In William, Harry and Catherine, the Royal Family has found ambassadors that share Diana’s natural ability to connect with people from all walks of life.',
 
 	// cards: [
 	// 	card1,
@@ -39,18 +39,18 @@ const Content = {
     },
     {
         "leftimage": kneelingDiana,
-        "leftcaption": "Diana and Catherine share an affinity for children. Di, here, at a British school in Seoul.",
+        "leftcaption": "Diana crouches down to talk to a child at a British school in Seoul.",
         "leftcredit": "Getty",
         "rightimage": kneelingCatherine,
-        "rightcaption": "Kate on a visit to Liverpool. ",
+        "rightcaption": "Kate reaches out to a young fan on a visit to Liverpool. ",
         "rightcredit": "Getty"
     },
     {
         "leftimage": lifesaversDiana,
-        "leftcaption": "Diana was in great form presenting prizes at a surf carnival in Terrigal in 1988, reportedly joking: “I’ve been waiting all day for this.” ",
+        "leftcaption": "Diana presents prizes at a surf carnival in Terrigal in 1988, joking: “I’ve been waiting all day for this.” ",
         "leftcredit": "Getty ",
         "rightimage": lifesaversKate,
-        "rightcaption": "Catherine meets young Surf Life Saving Club members in Manly in 2014. ",
+        "rightcaption": "Catherine smiles as she meets young Surf Life Saving Club members in Manly in 2014. ",
         "rightcredit": "Adam Taylor"
     },
     {
@@ -58,7 +58,7 @@ const Content = {
         "leftcaption": "Diana holds a young Prince Harry after a flight to Aberdeen.",
         "leftcredit": "Getty",
         "rightimage": planeCatherine,
-        "rightcaption": "Catherine introduces Prince George to Sydney. ",
+        "rightcaption": "Catherine introduces baby Prince George to Sydney. ",
         "rightcredit": "Getty"
     }
 ]
