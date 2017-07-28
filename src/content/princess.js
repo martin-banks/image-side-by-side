@@ -15,7 +15,7 @@ import * as planeCatherine from './images/princess/planeCatherine'
 
 const Content = {
 	title: 'Then and Now',
-	intro: 'In William, Harry and Catherine, the Royal Family has found ambassadors that share Diana’s natural ability to connect with people from all walks of life.',
+	intro: 'In William, Harry and Catherine, the Royal Family has found ambassadors that share Diana’s natural ability to connect with people from all walks of life',
 
 	// cards: [
 	// 	card1,

@@ -14,7 +14,7 @@ import * as harryElton from './images/friends/harryElton'
 
 const Content = {
 	title: 'Then and Now',
-	intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odio id voluptatibus',
+	intro: 'With their lives forever in the spotlight, the Royals need the support of good friends – and each other',
 
 	// cards: [
 	// 	card1,
