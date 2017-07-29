@@ -1,11 +1,11 @@
 {
-	"projectName": "compare_images_princess",
+	"projectName": "compare_images_motherhood",
 	"section": "network",
 	"path": {
 		"DEV": "localhost:8080/",
 		"UAT_local": ".",
-		"UAT": "http://10.68.72.154:7777/diana/02_princess/comparison",
-		"PROD": "http://media.news.com.au/nnd/T3interactives/"
+		"UAT": "http://10.68.72.154:7777/diana/01_motherhood/comparison",
+		"PROD": "http://media.news.com.au/nnd/T3Interactives/2017/network/diana/motherhood/thenAndNow"
 	},
 	"localstyle": false,
 	"autoscroll": {
