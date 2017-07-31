@@ -16,7 +16,7 @@ import * as kateFormal from './images/style_icon/kateFormal'
 
 const Content = {
 	title: 'Then and Now',
-	intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odio id voluptatibus',
+	intro: 'Diana was the style queen of her generation, so it’s no wonder Catherine turns to her for inspiration',
 
 	// cards: [
 	// 	card1,
@@ -24,10 +24,10 @@ const Content = {
 	cards: [
     {
         "leftimage": diRed,
-        "leftcaption": "Ladies in red grab the headlines: Diana in Catherine Walker for a dinner in Argentina in 1995. ",
+        "leftcaption": "Diana dons Catherine Walker for a dinner in Argentina in 1995. ",
         "leftcredit": "Getty",
         "rightimage": kateRed,
-        "rightcaption": "Catherine in a Preen dress for a reception in Canada in 2016. ",
+        "rightcaption": "Catherine opts for a Preen dress for a reception in Canada in 2016. ",
         "rightcredit": "Getty"
     },
     {
@@ -35,12 +35,12 @@ const Content = {
         "leftcaption": "Diana teams Versace and Jimmy Choo shoes in Chicago in 1996.",
         "leftcredit": "Getty",
         "rightimage": katePurple,
-        "rightcaption": "Catherine wears a V-neck Issa dress for Canada Day celebrations in Ottawa in 2011.",
+        "rightcaption": "Catherine wears an Issa dress for Canada Day celebrations in Ottawa in 2011.",
         "rightcredit": "Getty"
     },
     {
         "leftimage": diBeige,
-        "leftcaption": "Diana visits Wales in a tweed coat by Caroline Charles in 1981. ",
+        "leftcaption": "Diana keeps warm in a tweed coat by Caroline Charles on her first official visit to Wales in 1981. ",
         "leftcredit": "Getty",
         "rightimage": kateBeige,
         "rightcaption": "Kate debuts what has become a favourite brocade coat by Day Birger et Mikkelsen at a friend’s 2006 wedding.",
@@ -48,10 +48,10 @@ const Content = {
     },
     {
         "leftimage": diBlue,
-        "leftcaption": "Diana sports powder blue Versace in 1997.",
+        "leftcaption": "Diana looks chic in a powder blue Versace suit in 1997.",
         "leftcredit": "Getty",
         "rightimage": kateBlue,
-        "rightcaption": "Kate dons Catherine Walker in 2016. ",
+        "rightcaption": "Kate matches the princess's style in Catherine Walker in 2016. ",
         "rightcredit": "Getty"
     },
     {
