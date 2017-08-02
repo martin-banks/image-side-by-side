@@ -35,7 +35,7 @@ const Content = {
         "leftcaption": "William visited a hostel run by homeless charity The Passage with his mother and brother in 1993.",
         "leftcredit": "Instagram",
         "rightimage": willHostel,
-        "rightcaption": "Visiting again last year, William said the childhood experience \"left a deep and lasting impression upon me”. ",
+        "rightcaption": "Visiting again last year, William said the childhood experience \"left a deep and lasting impression”. ",
         "rightcredit": "Getty"
     },
     {
@@ -50,7 +50,7 @@ const Content = {
         "leftcaption": "Diana makes headlines on a visit to Angola in 1997 as she campaigns for an international ban on landmines.",
         "leftcredit": "AP",
         "rightimage": harryMines,
-        "rightcaption": "Harry travels to Angola in 2013 to see the work of HALO Trust, the mine clearance charity championed by his mother.",
+        "rightcaption": "Harry travels to Angola in 2013 to see the work of mine clearance charity The HALO Trust for himself.",
         "rightcredit": "AP"
     },
     {
