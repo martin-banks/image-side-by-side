@@ -1,11 +1,11 @@
 {
-	"projectName": "compare_images_philanthropy",
+	"projectName": "compare_images_theFirm",
 	"section": "network",
 	"path": {
 		"DEV": "localhost:8080/",
 		"UAT_local": ".",
-		"UAT": "http://10.68.72.154:7777/diana/05_philanthropy/comparison",
-		"PROD": "http://media.news.com.au/nnd/T3Interactives/2017/network/diana/philanthropy/thenAndNow"
+		"UAT": "http://10.68.72.154:7777/diana/06_theFirm/comparison",
+		"PROD": "http://media.news.com.au/nnd/T3Interactives/2017/network/diana/theFirm/thenAndNow"
 	},
 	"localstyle": false,
 	"autoscroll": {
@@ -28,12 +28,12 @@
 		},
 		"thumbBlurLarge": 2,
 		"thumbBlurSmall": 1,
-		"location": "./src/content/images/philanthropy",
+		"location": "./src/content/images/theFirm",
 		"locations": [
 			"./src/content/images/motherhood",
 			"./src/content/images/friends",
 			"./src/content/images/style",
-			"./src/content/images/philanthropy",
+			"./src/content/images/theFirm",
 			"./src/content/images/style_icon",
 			"./src/content/images/the_firm",
 			"./src/content/images/weddings"

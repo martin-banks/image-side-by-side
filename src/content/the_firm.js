@@ -2,20 +2,20 @@
 // import * as A from './images/A'
 // import * as B from './images/B'
 
-import * as dianaPolo from './images/the_firm/dianaPolo'
-import * as katePolo from './images/the_firm/katePolo'
-import * as dianaHoliday from './images/the_firm/dianaHoliday'
-import * as kateHoliday from './images/the_firm/kateHoliday'
-import * as queenAndCharles from './images/the_firm/queenAndCharles'
-import * as diAndHarry from './images/the_firm/diAndHarry'
-import * as harryDiana from './images/the_firm/harryDiana'
-import * as georgeWill from './images/the_firm/georgeWill'
-import * as willPlaying from './images/the_firm/willPlaying'
-import * as georgePlaying from './images/the_firm/georgePlaying'
+import * as dianaPolo from './images/theFirm/dianaPolo'
+import * as katePolo from './images/theFirm/katePolo'
+import * as dianaHoliday from './images/theFirm/dianaHoliday'
+import * as kateHoliday from './images/theFirm/kateHoliday'
+import * as queenAndCharles from './images/theFirm/queenAndCharles'
+import * as diAndHarry from './images/theFirm/diAndHarry'
+import * as harryDiana from './images/theFirm/harryDiana'
+import * as georgeWill from './images/theFirm/georgeWill'
+import * as willPlaying from './images/theFirm/willPlaying'
+import * as georgePlaying from './images/theFirm/georgePlaying'
 
 const Content = {
 	title: 'Then and Now',
-	intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odio id voluptatibus',
+	intro: 'While the Royal Family has changed over the years, somethings stay the same',
 
 	// cards: [
 	// 	card1,
@@ -23,7 +23,7 @@ const Content = {
 	cards: [
     {
         "leftimage": dianaPolo,
-        "leftcaption": "Charles pulls a delighted Diana in for a kiss after she presents him with a prize at at a polo match in Cirencester in 1985. ",
+        "leftcaption": "Charles pulls a delighted Diana in for a kiss after she presents him with a prize at a polo match in Cirencester in 1985. ",
         "leftcredit": "Getty",
         "rightimage": katePolo,
         "rightcaption": "William and Catherine pucker up after his success in a polo tournament in Santa Barbara, California, in 2011.",
@@ -39,7 +39,7 @@ const Content = {
     },
     {
         "leftimage": queenAndCharles,
-        "leftcaption": "The then Princess Elizabeth watches Charles play at Balmoral in 1952.",
+        "leftcaption": "Prince Charles plays in a toy car at Balmoral in 1952 as his mother watches on.",
         "leftcredit": "Getty",
         "rightimage": diAndHarry,
         "rightcaption": "Diana and Harry make a splash at a theme park in 1992.",

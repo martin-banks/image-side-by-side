@@ -4,8 +4,8 @@ import CONFIG from './config.json'
 // import Content from './content/princess'			// LIVE
 // import Content from './content/friends'			// LIVE
 // import Content from './content/style_icon'		// LIVE
-import Content from './content/philanthropy'
-// import Content from './content/the_firm'
+// import Content from './content/philanthropy'	// LIVE
+import Content from './content/the_firm'
 // import Content from './content/weddings'
 
 
