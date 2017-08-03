@@ -15,7 +15,7 @@ import * as georgePlaying from './images/theFirm/georgePlaying'
 
 const Content = {
 	title: 'Then and Now',
-	intro: 'While the Royal Family has changed over the years, somethings stay the same',
+	intro: 'While the Royal Family has changed over the years, some things stay the same',
 
 	// cards: [
 	// 	card1,
