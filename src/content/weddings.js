@@ -26,7 +26,7 @@ const Content = {
 	cards: [
     {
         "leftimage": dianaFather,
-        "leftcaption": "Lady Diana Spencer helps steady her ailing father, Earl Spencer, as she walks down the aisle at St Paul’s Cathedral.",
+        "leftcaption": "Lady Diana Spencer helps steady her ailing father, Earl Spencer, as she walks down the aisle at St Paul’s.",
         "leftcredit": "Getty",
         "rightimage": kateFather,
         "rightcaption": "Catherine Middleton holds her father Michael’s hand as she walks into history at Westminster Abbey.",
@@ -42,17 +42,17 @@ const Content = {
     },
     {
         "leftimage": dianaCup,
-        "leftcaption": "A commemorative mug marks the union of Charles and Di in 1981.",
+        "leftcaption": "A commemorative mug marks the union of Charles and Diana in 1981.",
         "leftcredit": "Getty",
         "rightimage": kateCup,
         "rightcaption": "Fans of William and Catherine could buy their own souvenir in 2011.",
         "rightcredit": "Getty"
     },
     {
-        "leftimage": kateKiss,
+        "leftimage": dianaKiss,
         "leftcaption": "Well-wishers were delighted as Charles and Diana kissed on the balcony of Buckingham Palace.",
         "leftcredit": "Getty",
-        "rightimage": dianaKiss,
+        "rightimage": kateKiss,
         "rightcaption": "Catherine and William's display of affection also brought cheers from the crowds.",
         "rightcredit": "Getty"
     },
