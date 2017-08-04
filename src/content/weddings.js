@@ -18,7 +18,7 @@ import * as kateLookingIn from './images/weddings/kateLookingIn'
 
 const Content = {
 	title: 'Then and Now',
-	intro: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore odio id voluptatibus',
+	intro: '​The weddings of Charles and Diana and William and Catherine were each spectacular in their own right as the best of British pomp and ceremony rolled out​',
 
 	// cards: [
 	// 	card1,
@@ -42,31 +42,31 @@ const Content = {
     },
     {
         "leftimage": dianaCup,
-        "leftcaption": "As the public embraced Royal wedding fever in 1981 and 2011, commemorative mugs were a popular souvenir.",
+        "leftcaption": "A commemorative mug marks the union of Charles and Di in 1981.",
         "leftcredit": "Getty",
         "rightimage": kateCup,
-        "rightcaption": "right caption",
+        "rightcaption": "Fans of William and Catherine could buy their own souvenir in 2011.",
         "rightcredit": "Getty"
     },
     {
         "leftimage": kateKiss,
-        "leftcaption": "The crowds cheered as each new union was sealed with a kiss — or two — on the balcony of Buckingham Palace.",
+        "leftcaption": "Well-wishers were delighted as Charles and Diana kissed on the balcony of Buckingham Palace.",
         "leftcredit": "Getty",
         "rightimage": dianaKiss,
-        "rightcaption": "right caption",
+        "rightcaption": "Catherine and William's display of affection also brought cheers from the crowds.",
         "rightcredit": "Getty"
     },
     {
         "leftimage": dianaChurch,
-        "leftcaption": "There were 3500 guests in the cathedral for Charles and Diana’s wedding, left, while millions watched on TV. ",
+        "leftcaption": "There were 3500 guests in the cathedral for Charles and Diana’s wedding, while millions watched on TV. ",
         "leftcredit": "Getty",
         "rightimage": kateChurch,
-        "rightcaption": "When William married he was given an official guest list of 777 names he did not know, but took the Queen’s advice to “get rid of it” and start by inviting his friends. ",
+        "rightcaption": "William was given an official guest list of 777 names he did not know, but took the Queen’s advice to “get rid of it”. ",
         "rightcredit": "Getty"
     },
     {
         "leftimage": dianaLookingAway,
-        "leftcaption": "Diana and Charles look to the crowds.",
+        "leftcaption": "Diana and Charles look to the crowds as they leave St Paul's.",
         "leftcredit": "Getty",
         "rightimage": kateLookingIn,
         "rightcaption": "Newlyweds Wills and Kate only have eyes for each other.",

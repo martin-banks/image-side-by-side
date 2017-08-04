@@ -5,8 +5,8 @@ import CONFIG from './config.json'
 // import Content from './content/friends'			// LIVE
 // import Content from './content/style_icon'		// LIVE
 // import Content from './content/philanthropy'	// LIVE
-import Content from './content/the_firm'
-// import Content from './content/weddings'
+// import Content from './content/the_firm'			// LIVE
+import Content from './content/weddings'
 
 
 // import Styles from './app.sass'
